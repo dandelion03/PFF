@@ -1,0 +1,107 @@
+@font-face { font-family: Graphik; font-weight: bold; src: url('Src/font/GraphikBold.otf');}
+@font-face { font-family: Graphik; font-weight: normal; src: url('Src/font/GraphikRegular.otf');}
+@font-face { font-family: Graphik; font-weight:500; src: url('Src/font/GraphikMedium.otf');}
+*{
+	box-sizing: border-box;
+    font-family: Graphik,sans-serif;
+    font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+body {
+    display: flex;
+margin-left: 10rem;
+}
+.form{
+    margin: 13.5rem 0 0 2rem;
+}
+h4{
+  color: #46474E;
+    margin: 1rem 0 3rem 0;
+    font-size: 1rem;
+    font-family: Graphik; font-weight:500;
+}
+h1{
+    font-family: Graphik,sans-serif;
+    font-weight: Bold;
+   color: #333438;
+}
+input{
+margin: 10px 0px 24px;
+border-radius: 7px;
+height: 42px;
+line-height: 42px;
+padding: 0px 7.5rem 0px 10px;
+outline: none;
+border-radius: 8px;
+border: #D1D1D3 0.2px solid;
+font-size: 14px;
+font-family: Graphik,sans-serif;
+font-weight: normal;
+}
+input:hover{
+    border: black 0.2px solid;
+}
+
+.ptext{
+    font-size: 0.9rem;
+    color:#46474E;
+}
+.girl {
+    position: absolute;
+    left: 40%;
+    margin-right: 30rem;
+    width: 750px;
+    height: 100%;
+}
+#button{
+    cursor: pointer;
+    font-family: Graphik,sans-serif;
+    font-weight: 500;
+    margin-top: 0.1rem;
+    margin-right: 6.1rem;
+    border-color: transparent;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3697a6;
+    color: white !important;
+}
+.logo{
+    position: absolute;
+    top: 4%;
+    left: 0.2%;
+    color: #28281F;
+	border: 0;
+    font-family: Graphik,sans-serif;
+    font-weight: Bold;
+	cursor:pointer;
+	font-size: 25pt;
+	margin-left: 4rem;
+}
+#passtxt{
+    margin-right:6.1rem;
+}
+#forgot{
+    font-size: 0.9rem;
+    color:#46474E;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+#forgot:hover{
+    transform:scale(1.5);
+    font-size: 0.9rem;
+    color:black;
+}
+
+#signup{
+    font-size: 0.9rem;
+    color:#46474E;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+#signup:hover{
+    transform:scale(1.5);
+    font-size: 0.9rem;
+    color:black;
+}

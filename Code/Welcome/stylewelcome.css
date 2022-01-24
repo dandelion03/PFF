@@ -1,0 +1,99 @@
+@font-face { font-family: Graphik; font-weight: bold; src: url('font/GraphikBold.otf');}
+@font-face { font-family: Graphik; font-weight: normal; src: url('font/GraphikRegular.otf');}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+li,a{
+	font-family: Graphik;
+	font-weight: normal;
+	color: #28281F;
+	text-decoration: none;
+	font-size: 1.3rem;
+	transition: 0.3s ease;
+
+}
+li,a:hover{
+color: #3697a6;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2rem;
+}
+nav{
+	padding-right: 4rem;
+
+
+}
+.nav__links{
+
+	list-style: none;
+  display: flex;
+  font-size: 16px;
+  margin-right: 1rem;
+
+}
+.nav__links li{
+	padding: 20px;
+	list-style: none;
+	display: inline-block;
+
+}
+
+.logo{
+	color: #28281F;
+	border: 0;
+	cursor:pointer;
+	font-size: 25pt;
+	margin-left: 4rem;
+
+
+}
+.banner{
+	display: flex;
+	margin-top: 5rem;
+}
+.book1{
+	margin-bottom: 2rem;
+margin-left: 5rem;
+	display: inline;
+	width: 617px;
+	height: 421px;
+	align-content: center;
+	
+}
+.divdesc{
+	margin-top:6rem;
+}
+.desc{
+	color: #28281F;
+	font-family: Graphik;
+	text-align: center;
+	font-weight:bold;
+	font-size: 2.6rem;
+
+	
+
+}
+#buttonwelcome{
+	cursor: pointer;
+margin-top: 2.5rem;
+border-radius: 3px;
+background-color: #3697a6;
+border: none;
+padding: 0.6rem 5rem;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 1.25rem;
+transition: 0.3s ease;
+}
+#buttonwelcome:hover{
+background-color: #2C7985;
+}
+#buttonwelcome{
+	color: white !important ;
+}
