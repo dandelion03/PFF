@@ -7,8 +7,9 @@
 
 </head>
 <body>
+
 	<div class="center">
-		<input type="checkbox" id="show">
+		<div class="bbg"></div>
 		<div class="container">
 			<label for="" id="close" aria-hidden="true" class="fas fa-times"></label>
 			<div class="text">Join our book community</div>
@@ -28,12 +29,13 @@
 			</form>
 		</div>
 	</div>
+		
 	<header>
             <a class="logo" href="#"><h2 class="logo">BOOKTIME</h2></a>
             <nav>
                 <ul class="nav__links">
                     <li><a href="/Code/Login/login.html">SIGN IN</a></li>
-                    <li><a for="show" href="#"><label for="show"> CREATE ACCOUNT</label></a></li>
+                    <li><a  id="creacc" href="#">CREATE ACCOUNT</a></li>
                     <li><a href="#">LISTS</a></li>
                     <li><a href="#">NEWS</a></li>
                     <li><a href="#">ABOUT US</a></li>
@@ -50,9 +52,24 @@
 				<p class="desc">Tell your friends what’s good.</p>
 			</div>
 		
-			<label for="show"><center><button id="buttonwelcome">Get Started , It's Free </button></center></label>
+			<center><button id="buttonwelcome">Get Started , It's Free </button></center>
 		</div>
 	</div>
+	<script>
+		let btn1=document.querySelector("#buttonwelcome");
+		let btn2=document.querySelector("#creacc");
+		let container=document.querySelector(".center");
+		let close=document.querySelector("#close");
+		btn1.onclick = function(){
+			container.classList.toggle("active");
+		}
+		btn2.onclick = function(){
+			container.classList.toggle("active");
+		}
+		close.onclick = function(){
+			container.classList.toggle("active");
+		}
+	</script>
 	
 	</body>
 	</html>

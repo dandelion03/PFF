@@ -1,17 +1,21 @@
 @font-face { font-family: Graphik; font-weight: bold; src: url('font/GraphikBold.otf');}
 @font-face { font-family: Graphik; font-weight: normal; src: url('font/GraphikRegular.otf');}
 @font-face { font-family: Graphik; font-weight:500; src: url('Src/font/GraphikMedium.otf');}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
     margin: 0;
 }
 body{
-font-family: Graphik,sans-serif;
-font-weight: normal;
+font-family: 'Inter', sans-serif;
+font-weight: 400;
 }
+
 .sidebar{
     position: fixed;
     top: 0;
     left: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     width: 50px;
     height: 100%;
     background: black;
@@ -33,9 +37,7 @@ pointer-events: none;
 .sidebar.active .logo-content .logo .logo_name{
     opacity: 1;
 }
-.logo_name{
 
-}
 .sidebar #btn-bar{
     cursor: pointer;
     position: absolute;

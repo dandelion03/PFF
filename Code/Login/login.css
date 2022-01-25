@@ -43,7 +43,7 @@ input:hover{
     border: black 0.2px solid;
 }
 
-.ptext{
+.emailtext{
     font-size: 0.9rem;
     color:#46474E;
 }
@@ -67,8 +67,9 @@ input:hover{
     background-color: #3697a6;
     color: white !important;
 }
-.logo{
+.logo a{
     position: absolute;
+    text-decoration: none;
     top: 4%;
     left: 0.2%;
     color: #28281F;
@@ -79,6 +80,7 @@ input:hover{
 	font-size: 25pt;
 	margin-left: 4rem;
 }
+
 #passtxt{
     margin-right:6.1rem;
 }
@@ -104,4 +106,113 @@ input:hover{
     transform:scale(1.5);
     font-size: 0.9rem;
     color:black;
+}
+.center.active .container {
+	position: fixed;
+	z-index:199;
+	display: block;
+}
+.center.active  {
+	display: block;
+}
+.center{
+	display: none;
+	position: absolute;
+	left: 35%;
+	top: 20%;
+    bottom: auto;
+    border-radius: 20px;
+	border: grey 0.2px solid;
+}
+.container{
+	display: block;
+	padding: 30px;
+	background-color: white;
+	height: 500px;
+	width: 350px;
+	border-radius: 20px;
+}
+.container .text{
+	text-align: center;
+	font-family: Graphik,sans-serif;
+	font-weight: 500;
+}
+.data{
+	margin-top: 2.5rem;
+}
+.container .formup .data input{
+	margin: 10px 0px 24px;
+	border-radius: 7px;
+	height: 42px;
+	line-height: 42px;
+	padding: 0px 7.5rem 0px 10px;
+	outline: none;
+	border-radius: 8px;
+	border: #D1D1D3 0.2px solid;
+	font-size: 14px;
+	font-family: Graphik,sans-serif;
+	font-weight: normal;
+	}
+
+.container .formup .data input:hover{
+		border: black 0.2px solid;
+}
+
+.container .formup .data  .ptext{
+    font-size: 0.9rem;
+    color:#46474E;
+    font-family: Graphik,sans-serif;
+    font-weight: normal;
+}
+#signup{
+font-size: 0.9rem;
+color:#46474E;
+transition: transform .2s ease-in-out;
+cursor: pointer;
+}
+#signup:hover{
+transform:scale(1.5);
+font-size: 0.9rem;
+color:black;
+}
+#buttoncreate{
+cursor: pointer;
+font-family: Graphik,sans-serif;
+font-weight: 500;
+margin-top: 0.1rem;
+margin-left: 5rem;
+border-color: transparent;
+width: 115px;
+height: 40px;
+border-radius: 20px;
+background-color: #3697a6;
+color: white !important;
+}
+#close{
+position: absolute;
+right: 20px;
+top: 31px;
+cursor: pointer;
+}
+
+.center.active .bbg{
+
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 199;
+}
+#signupor{
+font-size: 0.9rem;
+color:#46474E;
+transition: transform .2s ease-in-out;
+cursor: pointer;
+}
+#signupor:hover{
+transform:scale(1.5);
+font-size: 0.9rem;
+color:black;
 }

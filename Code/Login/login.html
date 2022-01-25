@@ -2,29 +2,64 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://kit.fontawesome.com/aac7ff65c1.js" crossorigin="anonymous"></script>
 	<title>X</title>
 
 </head>
 <body>
-    <p class="logo">BOOKTIME</p>
+    <div class="center">
+		<div class="bbg"></div>
+		<div class="container">
+			<label for="" id="close" aria-hidden="true" class="fas fa-times"></label>
+			<div class="text">Join our book community</div>
+			<form action="" class="formup">
+				<div class="data">
+					<p class="ptext">Email Address</p>
+					<input type="text" name="email" placeholder="enter your email">
+					<p class="ptext">Username</p>
+					<input type="password" name="user" placeholder="enter your username">
+					<p class="ptext">Password (Char +8)</p>
+					<input type="text" name="password" placeholder="enter your password">
+				</div>
+				<span class="signup">
+					<button type="submit" id="buttoncreate">Create Account</button>
+				</span>
+			</form>
+		</div>
+	</div>
+
+    <p class="logo"><a href="/Code/Welcome/welcome.html">BOOKTIME</a></p>
 		<form action="#" class="form">
             <h1 class="text">Hey, Welcome Back</h1>
             <h4 class="text">Good To See You Again!</h4>
-            <p class="ptext">Email Address</p>
+            <p class="emailtext">Email Address</p>
             <input type="text" name="user" placeholder="enter your email">
             <div class="forgot">
-            <span id="passtxt" class="ptext">Password</span>
+            <span id="passtxt" class="emailtext">Password</span>
             <a id="forgot" href="#">Forgot Password?</a>
             </div>
             <div>
             <input type="password" name="psw" placeholder="enter your password">
         </div>
         <span class="signup">
-            <button type="submit" id="button">Login</button>
-            <a id="signup" href="#">Or Sign Up?</a>
+           <a href="/Code/Main/index.html"><button type="submit" id="button">Login</button></a>
+            <a id="signupor" href="#">Or Sign Up?</a>
         </span>
         </form>
         <img src="logingirl.png" alt="" class="girl">
 	  
+        <script>
+            let btn1=document.querySelector("#signupor");
+            let container=document.querySelector(".center");
+            let close=document.querySelector("#close");
+            btn1.onclick = function(){
+                container.classList.toggle("active");
+            }
+            close.onclick = function(){
+                container.classList.toggle("active");
+            }
+        </script>
+
 </body>
 
+</html>

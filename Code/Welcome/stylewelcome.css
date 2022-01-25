@@ -6,6 +6,16 @@
 	margin: 0;
 	padding: 0;
 }
+.center.active .bbg{
+
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 199;
+}
 li,a{
 	font-family: Graphik;
 	font-weight: normal;
@@ -98,7 +108,17 @@ background-color: #2C7985;
 #buttonwelcome{
 	color: white !important ;
 }
+
+.center.active .container {
+	position: fixed;
+	z-index:199;
+	display: block;
+}
+.center.active  {
+	display: block;
+}
 .center{
+	display: none;
 	position: absolute;
 	left: 35%;
 	top: 20%;
@@ -107,7 +127,7 @@ background-color: #2C7985;
 	border: grey 0.2px solid;
 }
 .container{
-	display: none;
+	display: block;
 	padding: 30px;
 	background-color: white;
 	height: 500px;
@@ -123,7 +143,7 @@ background-color: #2C7985;
 .data{
 	margin-top: 1.6rem;
 }
-input{
+.container .form .data input{
 	margin: 10px 0px 24px;
 	border-radius: 7px;
 	height: 42px;
@@ -176,23 +196,6 @@ input:hover{
 	top: 31px;
 	cursor: pointer;
 }
-#show:checked ~ header .banner {
-	background-color: rgba(17, 17, 17, 0.65);
-	position:absolute;
-	z-index: 9001;
-	top:0px;
-	left:0px;
-	width:100%;
-	}
-#show:checked ~ .container {
-display:block ;
-}
-input[type="checkbox"]{
-display: none;
-}
-@keyframes animateBackground {
-	from {opacity: 0.8;}
-	to {opacity: 0.30;}
-}
+
 
 
