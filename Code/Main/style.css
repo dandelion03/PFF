@@ -1,0 +1,245 @@
+@font-face { font-family: Graphik; font-weight: bold; src: url('font/GraphikBold.otf');}
+@font-face { font-family: Graphik; font-weight: normal; src: url('font/GraphikRegular.otf');}
+@font-face { font-family: Graphik; font-weight:500; src: url('Src/font/GraphikMedium.otf');}
+*{
+    margin: 0;
+}
+body{
+font-family: Graphik,sans-serif;
+font-weight: normal;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: black;
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
+}
+.sidebar .logo-content .logo .logo_name{
+margin-left: 40px;
+margin-top: 18px;
+color: white;
+font-family: Graphik,sans-serif;
+font-weight: bold;
+font-size: 24px;
+opacity: 0;
+pointer-events: none;
+}
+.sidebar.active .logo-content .logo .logo_name{
+    opacity: 1;
+}
+.logo_name{
+
+}
+.sidebar #btn-bar{
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top:20px;
+    color: white;
+    transform: translateX(-50%);
+}
+.sidebar.active #btn-bar{
+    left:90%;
+}
+.sidebar .nav-list{
+    margin-top: 20px;
+    padding:0;
+    
+    
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    line-height:   50px;
+    list-style: none;
+}
+.sidebar.active ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-left: 20px;
+    line-height:   50px;
+    list-style: none;
+}
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    line-height: 35px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+}
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+.sidebar ul li:hover .tooltip{
+    transition: all 0.5s ease;
+    opacity: 1.2;
+top: 50%;
+
+}
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 2px;
+    margin-left: 2px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+.sidebar.active ul li a{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 44px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+.sidebar ul li  i{
+    height: 50px;
+    line-height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+.sidebar ul li a:hover{
+    background: white;
+
+    color: black;
+}
+.sidebar ul li  #search{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    z-index:99;
+    line-height: 2.7rem;
+    
+
+}
+.sidebar.active ul li #search{
+    color: black;
+}
+
+.sidebar ul li input{
+    position: absolute;
+    height: 40px;
+    width: 200px;
+    left: 0;
+    top: 0;
+    padding-left: 50px;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+.sidebar.active ul li input{
+    opacity: 1;
+}
+.sidebar.active .links_name{
+opacity:1;
+pointer-events: auto;
+}
+.sidebar .links_name{
+    opacity:0;
+    pointer-events: none;
+    }
+.sidebar .profile-content{
+    height: 65px;
+    width: 100%;
+    background:rgb(36, 35, 35);
+    position: absolute;
+    color: white;
+    bottom: 10%;
+    left: 0;
+
+}
+.sidebar .profile-content .profile{
+
+    position: relative;
+    padding:10px 6px;
+    height: 60px;
+}
+.sidebar .profile-content .profile .profile-details{
+    display: flex;
+    align-items: center;
+}
+.sidebar.active .profile .profile-details img{
+height: 45px;
+width: 45px;
+margin-left: 20px;
+object-fit: cover;
+border-radius: 12px;
+}
+.sidebar .profile .profile-details img{
+    height: 45px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 12px;
+    }
+.profile .profile-details .username{
+       font-family: Graphik,sans-serif;
+        font-weight: 500;
+        margin-left: 30px;
+        color: white;
+}
+
+.sidebar.active #logout{
+position: absolute;
+left: 45%;
+color: white;
+border-radius: 12px;
+bottom: 3%;
+cursor: pointer;
+}
+.sidebar #logout{
+    position: absolute;
+    left: 35%;
+    color: white;
+    border-radius: 12px;
+    bottom: 3%;
+    cursor: pointer;
+    }
+.home-content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 50px);
+    left: 50px;
+}
+.sidebar.active ~ .home-content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+.home-text h1{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+}
+

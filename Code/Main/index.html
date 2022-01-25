@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/aac7ff65c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <div class="logo_name">BOOKTIME</div>
+            </div>
+            <i class="fas fa-bars" id="btn-bar"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                    <i id="search" class="fas fa-search"></i>
+                    <input type="text" placeholder="enter your search">
+              <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user-alt"></i>
+                    <span class="links_name">Profile</span>
+                </a>
+              <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-comment-alt"></i>
+                    <span class="links_name">Reviews</span>
+                </a>
+              <span class="tooltip">Reviews</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-list"></i>
+                    <span class="links_name">Lists</span>
+                </a>
+              <span class="tooltip">Lists</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span class="links_name">Settings</span>
+                </a>
+              <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="https://t4.ftcdn.net/jpg/00/88/53/89/360_F_88538986_5Bi4eJ667pocsO3BIlbN4fHKz8yUFSuA.jpg" alt="profile-pic" >
+                    <div class="username">ACHRAF303</div>
+                </div>
+               
+            </div>
+           
+        </div>
+        <i class="fas fa-sign-out-alt" id="logout"></i>
+    </div>
+    <div class="home-content">
+        <div class="home-text">
+            <h1>BOOKTIME</h1>
+        </div>
+    </div>
+   <script>
+       let btn=document.querySelector("#btn-bar");
+       let sidebar=document.querySelector(".sidebar");
+       let search=document.querySelector("#search");
+
+      btn.onclick = function(){
+           sidebar.classList.toggle("active");
+       }
+       search.onclick = function(){
+           sidebar.classList.toggle("active");
+       }
+   </script>
+</body>
+</html>
