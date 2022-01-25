@@ -1,5 +1,6 @@
 @font-face { font-family: Graphik; font-weight: bold; src: url('font/GraphikBold.otf');}
 @font-face { font-family: Graphik; font-weight: normal; src: url('font/GraphikRegular.otf');}
+@font-face { font-family: Graphik; font-weight:500; src: url('Src/font/GraphikMedium.otf');}
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -97,3 +98,101 @@ background-color: #2C7985;
 #buttonwelcome{
 	color: white !important ;
 }
+.center{
+	position: absolute;
+	left: 35%;
+	top: 20%;
+    bottom: auto;
+    border-radius: 20px;
+	border: grey 0.2px solid;
+}
+.container{
+	display: none;
+	padding: 30px;
+	background-color: white;
+	height: 500px;
+	width: 350px;
+	border-radius: 20px;
+}
+.text{
+	
+	text-align: center;
+	font-family: Graphik,sans-serif;
+	font-weight: 500;
+}
+.data{
+	margin-top: 1.6rem;
+}
+input{
+	margin: 10px 0px 24px;
+	border-radius: 7px;
+	height: 42px;
+	line-height: 42px;
+	padding: 0px 7.5rem 0px 10px;
+	outline: none;
+	border-radius: 8px;
+	border: #D1D1D3 0.2px solid;
+	font-size: 14px;
+	font-family: Graphik,sans-serif;
+	font-weight: normal;
+	}
+input:hover{
+		border: black 0.2px solid;
+}
+
+.ptext{
+		font-size: 0.9rem;
+		color:#46474E;
+		font-family: Graphik,sans-serif;
+		font-weight: normal;
+}
+#signup{
+    font-size: 0.9rem;
+    color:#46474E;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+#signup:hover{
+    transform:scale(1.5);
+    font-size: 0.9rem;
+    color:black;
+}
+#button{
+    cursor: pointer;
+    font-family: Graphik,sans-serif;
+    font-weight: 500;
+    margin-top: 0.1rem;
+    margin-right: 6rem;
+    border-color: transparent;
+    width: 115px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3697a6;
+    color: white !important;
+}
+#close{
+	position: absolute;
+	right: 20px;
+	top: 31px;
+	cursor: pointer;
+}
+#show:checked ~ header .banner {
+	background-color: rgba(17, 17, 17, 0.65);
+	position:absolute;
+	z-index: 9001;
+	top:0px;
+	left:0px;
+	width:100%;
+	}
+#show:checked ~ .container {
+display:block ;
+}
+input[type="checkbox"]{
+display: none;
+}
+@keyframes animateBackground {
+	from {opacity: 0.8;}
+	to {opacity: 0.30;}
+}
+
+

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://kit.fontawesome.com/aac7ff65c1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="stylewelcome.css">
 	<title>X</title>
 
 </head>
 <body>
+	<div class="center">
+		<input type="checkbox" id="show">
+		<div class="container">
+			<label for="" id="close" aria-hidden="true" class="fas fa-times"></label>
+			<div class="text">Join our book community</div>
+			<form action="" class="form">
+				<div class="data">
+					<p class="ptext">Email Address</p>
+					<input type="text" name="email" placeholder="enter your email">
+					<p class="ptext">Username</p>
+					<input type="password" name="user" placeholder="enter your username">
+					<p class="ptext">Password (Char +8)</p>
+					<input type="text" name="password" placeholder="enter your password">
+				</div>
+				<span class="signup">
+					<button type="submit" id="button">Create Account</button>
+					<a id="signup" href="/Code/Login/login.html">Or Sign In?</a>
+				</span>
+			</form>
+		</div>
+	</div>
 	<header>
             <a class="logo" href="#"><h2 class="logo">BOOKTIME</h2></a>
             <nav>
                 <ul class="nav__links">
                     <li><a href="/Code/Login/login.html">SIGN IN</a></li>
-                    <li><a href="#">CREATE ACCOUNT</a></li>
+                    <li><a for="show" href="#"><label for="show"> CREATE ACCOUNT</label></a></li>
                     <li><a href="#">LISTS</a></li>
                     <li><a href="#">NEWS</a></li>
                     <li><a href="#">ABOUT US</a></li>
@@ -27,9 +49,10 @@
 				<p class="desc">Save those you want to read.</p>
 				<p class="desc">Tell your friends what’s good.</p>
 			</div>
-			<center><button id="buttonwelcome">Get Started , It's Free </button></center>
+		
+			<label for="show"><center><button id="buttonwelcome">Get Started , It's Free </button></center></label>
 		</div>
 	</div>
-
+	
 	</body>
 	</html>
