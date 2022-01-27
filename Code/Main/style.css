@@ -228,16 +228,17 @@ cursor: pointer;
 .home-content{
     position: absolute;
     height: 100%;
-    width: calc(100% - 50px);
+    background-color: white;
+    width: calc(100% - 434px);
     left: 50px;
 }
 .sidebar.active ~ .home-content{
     position: absolute;
     height: 100%;
-    width: calc(100% - 240px);
+    width: calc(100% - 624px);
     left: 240px;
 }
-.home-text h1{
+#logo1{
     margin-top: 1rem;
     text-align: center;
     font-size: 2rem;
@@ -245,3 +246,140 @@ cursor: pointer;
         font-weight: bold;
 }
 
+.sidebar2{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 24rem;
+    margin-right: 15px;
+    height: 15rem;
+}
+.sidebar.active ~ .sidebar2{
+    width: calc(24rem - 240px);
+}
+.toppart{
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+    margin-left: 2rem;
+    margin-right: 10px;
+}
+.toppart .fa-arrow-right{
+    margin-left: 6px;
+    cursor: pointer;
+}
+.sidebar2container {
+    margin-left: 4.1rem;
+    width:450px;
+}
+.cover {
+    cursor: pointer;
+    float:left;
+    border-radius: 3px;
+    border: solid 1.2px black;
+    margin-left:-50px;
+    margin-top:14px;
+    transition: 0.3s all ease;
+    margin-bottom:50px;
+    width:100px;
+    height:150px;
+}
+.cover:hover {
+  margin-right:50px; 
+  margin-top:0px; 
+  margin-bottom:0; 
+  transform: scale(1);
+  
+}
+.mainbookscontainer{
+    
+    margin-top: 48px;
+    object-fit: cover;
+    margin-left:25px;
+}
+.mainbookscontainer .mainbookstitle{
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 1rem;
+}
+.mainbookscontainer .mainbookswrapper{
+    position: relative;
+    display: flex;
+    
+}
+.booklistitem{
+    border: 2px black solid;
+    border-radius: 3px;
+    margin-left: 5px;
+    position: relative;
+    background-color: black;
+}
+.booklistitem:hover{
+    border: 2px green solid;
+}
+.booklistitem:hover
+.booklistitem:hover .mainbooktitle ,
+.booklistitem:hover .likeicon, 
+.booklistitem:hover .fa-heart {
+opacity: 1;
+}
+.mainbookscontainer .mainbookswrapper .mainbookcover{
+    cursor: pointer;
+    width:150px;
+    transition: 0.2s all ease-in-out;
+    height:220px;
+
+}
+.mainbookscontainer .mainbookswrapper .mainbookcover:hover{
+    background-color: black;
+    opacity: 0.5;
+}
+
+.mainbooktitle{
+    text-align: center;
+    left: 5%;
+    top: 40%;
+    opacity: 0;
+    position: absolute;
+    font-family: Graphik,sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+.likeicon{
+    opacity: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    BOTTOM: 0;
+    position: absolute;
+    width: 100%;
+    padding-top: 5px;
+    left: 0;
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+.fa-heart{
+    cursor:pointer;
+    text-align: center;
+    display: block;
+    opacity: 0;
+  margin-left: auto;
+  margin-bottom:3px;
+  margin-right: auto;
+  width: 50%;
+}
+.fa-heart:hover{
+    color: green;
+}
+
+.mainbookswrapper .fa-arrow-right{
+    right: 120px;
+    top: 40%;
+    position: absolute;
+   font-size: 40px;
+    color: black;
+    opacity: 0.5;
+}
