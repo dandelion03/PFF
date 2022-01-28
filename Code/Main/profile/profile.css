@@ -94,7 +94,7 @@ pointer-events: none;
 .sidebar ul li:hover .tooltip{
     transition: all 0.5s ease;
     opacity: 1.2;
-    background-color: black;
+    background-color: white;
 top: 50%;
 
 }
@@ -234,26 +234,6 @@ cursor: pointer;
     bottom: 3%;
     cursor: pointer;
     }
-.home-content{
-    overflow: hidden;
-    position: absolute;
-    height: 100%;
-    background-color: white;
-    width: calc(100% - 434px);
-    left: 50px;
-}
-.sidebar.active ~ .home-content{
-    position: absolute;
-    height: 100%;
-    left: 240px;
-}
-#logo1{
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 2rem;
-    font-family: Graphik,sans-serif;
-        font-weight: bold;
-}
 
 .sidebar2{
     position: fixed;
@@ -301,6 +281,78 @@ cursor: pointer;
   margin-bottom:0; 
   transform: scale(1);
   
+}
+.sidebar3{
+    position: fixed;
+    right: 0;
+    top: 350px;
+    width: 24rem;
+    margin-right: 15px;
+    height: 15rem;
+}
+.sidebar.active ~ .sidebar3{
+    width: calc(24rem - 240px);
+}
+.toppart{
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+    margin-left: 2rem;
+    margin-right: 10px;
+}
+.toppart .fa-arrow-right{
+    margin-left: 6px;
+    cursor: pointer;
+}
+.sidebar3container {
+    margin-top: 3px;
+    margin-left: 4.1rem;
+    width:450px;
+}
+.home-content{
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    width: calc(100% - 434px);
+    left: 50px;
+}
+.sidebar.active ~ .home-content{
+    position: absolute;
+    height: 100%;
+    left: 240px;
+}
+#logo1{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+}
+.profilecontainer{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 20px;
+}
+.profiledet{
+    display: flex;
+}
+.profileicon img{
+    border: cadetblue 2px solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.profileicon img:hover{
+    border: cadetblue 2px solid;
+}
+.profileusername{
+    margin-top: 2.8rem;
+    margin-left: 1.5rem;
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
 }
 .mainbookscontainer{
     overflow: hidden;
@@ -414,8 +466,9 @@ opacity: 1;
     height: 150px;
     width: 170px;
     border: solid black 1.2px;
+    
     bottom: 0;
-    background-color: #449CAC;
+    background-color: #3697a6;
 
 }
 .dropcontainer{
@@ -443,3 +496,42 @@ opacity: 1;
   .dropcontainer .droplist .dropmenu li:hover{
     background-color: #2E342E;
   }
+
+#buttonedit{
+    text-decoration: none;
+  background-color:#3697a6;
+  color: white;
+  height: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 2.1rem;
+    margin-left: 24px;
+    text-align: center;
+    font-family: Graphik,sans-serif;
+    font-weight: 500;
+  border-radius: 12px;
+}
+#buttonedit:hover{
+    background-color: #252c25;
+}
+
+.topart{
+    display: flex;
+    margin-top: 30px;
+}
+
+ #seemore2{
+     
+    margin-left: 27rem;
+
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+ }
+ .reviewtitle{
+    margin-left: 1.8rem;
+    font-family: Graphik,sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+ }

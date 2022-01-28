@@ -28,4 +28,12 @@ window.onload = function(){
 
           
        });
+
+        const dotmenu =  document.querySelectorAll(".dots");
+        const drop =  document.querySelector(".dropcontainer");
+        dotmenu.forEach(function(dots){
+            dots.addEventListener("click", function(){
+                drop.classList.toggle("active");
+            })
+        })
     };
