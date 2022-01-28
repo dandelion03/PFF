@@ -50,6 +50,8 @@ pointer-events: none;
     left:90%;
 }
 .sidebar .nav-list{
+    font-family: Graphik,sans-serif;
+    font-weight: normal;
     margin-top: 20px;
     padding:0;
     
@@ -147,6 +149,7 @@ top: 50%;
     position: absolute;
     height: 40px;
     width: 200px;
+    font-family: Graphik,sans-serif;
     left: 0;
     top: 0;
     padding-left: 50px;
@@ -268,6 +271,7 @@ cursor: pointer;
     cursor: pointer;
 }
 .sidebar2container {
+    margin-top: 3px;
     margin-left: 4.1rem;
     width:450px;
 }
@@ -361,14 +365,17 @@ opacity: 1;
     background-color: rgb(36, 35, 35);
     color: white;
 }
+.fa-ellipsis-h:hover{
+    color: green;
+    cursor: pointer;
+}
+
 .fa-heart{
     cursor:pointer;
     text-align: center;
-    display: block;
     opacity: 0;
-  margin-left: auto;
+  margin-left: 5px;
   margin-bottom:3px;
-  margin-right: auto;
   width: 50%;
 }
 .fa-heart:hover{

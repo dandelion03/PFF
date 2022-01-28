@@ -55,18 +55,14 @@ input:hover{
     height: 100%;
 }
 #button{
-    cursor: pointer;
-    font-family: Graphik,sans-serif;
-    font-weight: 500;
-    margin-top: 0.1rem;
-    margin-right: 6.1rem;
-    border-color: transparent;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #3697a6;
-    color: white !important;
+    text-decoration: none;
+  background-color: rgb(113, 113, 236);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin-right:7.3rem ;
+  border-radius: 12px;
 }
+
 .logo a{
     position: absolute;
     text-decoration: none;
