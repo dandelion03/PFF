@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="Script.js"></script>
     <script src="https://kit.fontawesome.com/aac7ff65c1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,8 +63,8 @@
            
         </div>
         <i class="fas fa-sign-out-alt" id="logout"></i>
-        <!-- sffffffffff -->
     </div>
+            <!-- LIST READING -->
     <div class="sidebar2">
         <div class="toppart">
             <span id="sidebar2title">WANT TO READ</span>
@@ -80,14 +81,15 @@
                 <br style='clear:both' />
               </div>
         </div>
-
     </div>
+    <!-- LIST RECOMMENDATION -->
 
 
 
-    <!-- sffffffffff -->
+    <!-- HOME CONTENT -->
     <div class="home-content">
         <div class="mainbookscontainer">
+            <!-- POPULAR BOOKS -->
             <div class="mainbookstitle">POPULAR BOOKS</div>
             <div class="mainbookswrapper">
                 <!-- <div class="arrowswipe"><i class="fas fa-arrow-left"></i></div>  -->
@@ -111,11 +113,20 @@
                     <span class="mainbooktitle">Bride of The Sea</span>
                     <div class="likeicon"><i class="fas fa-heart"></i></div>
                 </div>
-               <div class="arrowswipe"><i class="fas fa-arrow-right"></i></div> 
+                <div class="booklistitem"><img  class='mainbookcover' id="book1" src="/Code/Main/imgg/Bride-of-the-sea-book-cover-662x1024.jpg" alt="">
+                    <span class="mainbooktitle">Bride of The Sea</span>
+                    <div class="likeicon"><i class="fas fa-heart"></i></div>
+                </div>
+                <div class="booklistitem"><img  class='mainbookcover' id="book1" src="/Code/Main/imgg/Bride-of-the-sea-book-cover-662x1024.jpg" alt="">
+                    <span class="mainbooktitle">Bride of The Sea</span>
+                    <div class="likeicon"><i class="fas fa-heart"></i></div>
+                </div>
             </div>
+            <div class="arrowswipe"><i class="fas fa-arrow-right"></i></div>
         </div>
+        <!-- released this week -->
         <div class="mainbookscontainer">
-            <div class="mainbookstitle">POPULAR BOOKS</div>
+            <div class="mainbookstitle">RELEASED THIS WEEK</div>
             <div class="mainbookswrapper">
                 <!-- <div class="arrowswipe"><i class="fas fa-arrow-left"></i></div>  -->
                 <div class="booklistitem"><img  class='mainbookcover' id="book1" src="/Code/Main/imgg/five-feet-apart-9781534437333_hr-679x1024.jpg" alt="">
@@ -138,27 +149,19 @@
                     <span class="mainbooktitle">Bride of The Sea</span>
                     <div class="likeicon"><i class="fas fa-heart"></i></div>
                 </div>
-               <div class="arrowswipe"><i class="fas fa-arrow-right"></i></div> 
+                <div class="booklistitem"><img  class='mainbookcover' id="book1" src="/Code/Main/imgg/Bride-of-the-sea-book-cover-662x1024.jpg" alt="">
+                    <span class="mainbooktitle">Bride of The Sea</span>
+                    <div class="likeicon"><i class="fas fa-heart"></i></div>
+                </div>
+                <div class="booklistitem"><img  class='mainbookcover' id="book1" src="/Code/Main/imgg/Bride-of-the-sea-book-cover-662x1024.jpg" alt="">
+                    <span class="mainbooktitle">Bride of The Sea</span>
+                    <div class="likeicon"><i class="fas fa-heart"></i></div>
+                </div>   
             </div>
+            <div id="arrow2" class="arrowswipe"><i class="fas fa-arrow-right"></i></div>
         </div>
+       
     </div>
 
-
-
-
-
-
-   <script>
-       let btn=document.querySelector("#btn-bar");
-       let sidebar=document.querySelector(".sidebar");
-       let search=document.querySelector("#search");
-
-      btn.onclick = function(){
-           sidebar.classList.toggle("active");
-       }
-       search.onclick = function(){
-           sidebar.classList.toggle("active");
-       }
-   </script>
 </body>
 </html>
