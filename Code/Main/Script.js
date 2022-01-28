@@ -16,7 +16,7 @@ window.onload = function(){
         let clickCounter=0;
            arrow.addEventListener("click" ,()=>{
                clickCounter++;
-               if(maxclicks - (3 + clickCounter)>0) {
+               if(maxclicks - (4+ clickCounter)>0) {
                 bookLists[i].style.transform=`translateX(
                     ${bookLists[i].computedStyleMap().get("transform")[0].x.value -160}px)`;
                }else {
