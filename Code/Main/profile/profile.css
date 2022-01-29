@@ -181,7 +181,7 @@ pointer-events: auto;
 .sidebar .profile-content{
     height: 65px;
     width: 100%;
-    background:rgb(36, 35, 35);
+    background-color: #252c25;
     position: absolute;
     color: white;
     bottom: 10%;
@@ -499,16 +499,17 @@ opacity: 1;
 
 #buttonedit{
     text-decoration: none;
-  background-color:#3697a6;
-  color: white;
-  height: 20px;
-  padding: 10px 20px 10px 20px;
-  margin-top: 2.1rem;
-    margin-left: 24px;
+    background-color: #3697a6;
+    color: white;
+    /* height: 20px; */
+    padding: 5px 5px 5PX 5px;
+    margin-top: 5rem;
+    margin-left: -110px;
     text-align: center;
     font-family: Graphik,sans-serif;
     font-weight: 500;
-  border-radius: 12px;
+    font-size: 14px;
+    border-radius: 6px;
 }
 #buttonedit:hover{
     background-color: #252c25;
@@ -534,4 +535,34 @@ opacity: 1;
         font-weight: bold;
         color: black;
         font-size: 18px;
+ }
+
+ .profile-stats{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 7rem;
+
+
+    padding-right: 5px;
+ }
+ .profile-statistic a{
+    text-align: center;
+    font-family: Graphik,sans-serif;
+    font-weight: 500;
+    color: #313631;
+    font-size: 16px;
+    margin-left: 5rem;
+    text-decoration: none;
+ }
+ .profile-statistic .value{
+    color: #252c25;
+    display: block;
+ }
+ .profile-statistic .definition{
+
+    color: #252c25;
+    display: block;
+    letter-spacing: .075em;
+    margin-top: .5em;
+    text-transform: uppercase;
  }
