@@ -12,7 +12,7 @@ window.onload = function(){
        const arrows=document.querySelectorAll(".arrowswipe");
        const bookLists = document.querySelectorAll(".mainbookswrapper");
        arrows.forEach((arrow,i)=>{
-        const maxclicks=bookLists[i].querySelectorAll("img").length;
+        const maxclicks=bookLists[i].querySelectorAll(".mainbookcover").length;
         let clickCounter=0;
            arrow.addEventListener("click" ,()=>{
                clickCounter++;
