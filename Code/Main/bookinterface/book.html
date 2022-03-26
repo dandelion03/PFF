@@ -1,0 +1,318 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="/Code/Main/Script.js"></script>
+    <link rel="stylesheet" href="book.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKTIME - The Act Of Love</title>
+  </head>
+  <body>
+    <!-- popup menu add -->
+    <div class="modal add hidden">
+      <button class="close-modal">x</button>
+      <h1 class="popuptitle">Add to collection</h1>
+      <div class="collectioncontainer">
+        <div class="collections">
+          <div class="collectionname">Fantasy</div>
+          <div class="booknumberscollection">13</div>
+        </div>
+        <div class="collections">
+          <div class="collectionname">Drama</div>
+          <div class="booknumberscollection">2</div>
+        </div>
+        <div class="addcollection">
+          <button id="createcoll">Create Collection</button>
+        </div>
+      </div>
+    </div>
+    <div class="overlay addoverlay hidden"></div>
+    <!-- popup menu read end -->
+    <div class="modal read hidden">
+      <button class="close-modal close3">x</button>
+      <h1 class="popuptitle">Congrats ! You Finished A book</h1>
+      <div class="reviewplace">
+        <div class="reviewadd">
+          <div class="collection description">
+            <textarea
+              class="coldesc"
+              name="desc"
+              cols="30"
+              rows="10"
+              placeholder="enter Review (optional)"
+            ></textarea>
+          </div>
+        </div>
+        <div class="addcollection">
+          <button id="createreview">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="overlay reviewoverlay hidden"></div>
+    <!-- popup menu read end -->
+    <!-- popup menu create list -->
+    <div class="modal create hidden">
+      <div class="btncoll">
+        <button class="close-modal close2">
+          <i class="fa-brands fa-xing"></i>
+        </button>
+        <button class="return"><-</button>
+      </div>
+      <h1 class="popuptitle">Create a collection</h1>
+      <div class="collectioncontainer">
+        <div class="createcollections">
+          <div class="collectionname">
+            <input
+              class="colname"
+              type="text"
+              name="collection"
+              placeholder="enter a collection name"
+            />
+          </div>
+          <div class="collection description">
+            <textarea
+              class="coldesc"
+              name="desc"
+              cols="30"
+              rows="10"
+              placeholder="enter description (optional)"
+            ></textarea>
+          </div>
+        </div>
+        <div class="addcollection"><button>Create Collection</button></div>
+      </div>
+    </div>
+    <div class="overlay createoverlay hidden"></div>
+    <!-- popup menu create list  end -->
+    <h1 id="logo1">BOOKTIME</h1>
+    <div class="sidebar">
+      <div class="logo-content">
+        <div class="logo">
+          <div class="logo_name">BOOKTIME</div>
+        </div>
+        <i class="fas fa-bars" id="btn-bar"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i id="search" class="fas fa-search"></i>
+          <input type="text" placeholder="enter your search" />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="/Code/Main/profile/profile.html">
+            <i class="fas fa-user-alt"></i>
+            <span class="links_name">PROFILE</span>
+          </a>
+          <span class="tooltip">Profile</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-comment-alt"></i>
+            <span class="links_name">REVIEWS</span>
+          </a>
+          <span class="tooltip">Reviews</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-list"></i>
+            <span class="links_name">SHELVES</span>
+          </a>
+          <span class="tooltip">Lists</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="links_name">SETTINGS</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+      </ul>
+      <div class="profile-content">
+        <div class="profile">
+          <div class="profile-details">
+            <img
+              src="https://t4.ftcdn.net/jpg/00/88/53/89/360_F_88538986_5Bi4eJ667pocsO3BIlbN4fHKz8yUFSuA.jpg"
+              alt="profile-pic"
+            />
+            <div class="username">ACHRAF303</div>
+          </div>
+        </div>
+      </div>
+      <a href="/Code/Welcome/welcome.html"
+        ><i class="fas fa-sign-out-alt" id="logout"></i
+      ></a>
+    </div>
+    <div class="home-content">
+      <div class="bookcontainer">
+        <div class="bookcondetails">
+          <div class="booklistitem">
+            <img
+              class="mainbookcover"
+              id="book1"
+              src="/Code/Main/imgg/3a88698b2e34f85ed788ee03ce256c38.jpg"
+              alt=""
+            />
+          </div>
+          <div class="bookdetails">
+            <div class="booktitle">The Act Of Love</div>
+            <div class="author">Howard Jacobson</div>
+
+            <div class="bookbtn">
+              <span class="btnread"><button id="toread">To Read</button></span>
+              <span class="btnread"><button id="read">Read</button></span>
+              <span class="btnread"><button id="add">Add</button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bookinfocontainer">
+        <div class="info">
+          <section class="tab" id="second-tab">
+            <nav>
+              <a href="#first-tab">Reviews</a>
+              <a href="#second-tab" class="active">Details</a>
+            </nav>
+            <p class="bookdescription">
+              In April, 1992, a young man from a well-to-do family hitchhiked to
+              Alaska and walked alone into the wilderness north of Mt. McKinley.
+              His name was Christopher Johnson McCandless. He had given $25,000
+              in savings to charity, abandoned his car and most of his
+              possessions, burned all the cash in his wallet, and invented a new
+              life for himself. Four months later, a party of moose hunters
+              found his decomposed body. How McCandless came to die is the
+              unforgettable story of Into the Wild. Immediately after graduating
+              from college in 1991, McCandless had roamed through the West and
+              Southwest on a vision quest like those made by his heroes Jack
+              London and John Muir. In the Mojave Desert he abandoned his car,
+              stripped it of its license plates, and burned all of his cash. He
+              would give himself a new name, Alexander Supertramp, and,
+              unencumbered by money and belongings, he would be free to wallow
+              in the raw, unfiltered experiences that nature presented. Craving
+              a blank spot on the map, McCandless simply threw away the maps.
+              Leaving behind his desperate parents and sister, he vanished into
+              the wild.
+            </p>
+            <div class="releasedate">
+              <span class="datetext">Release Date:</span>
+              <span class="date">1997-05-12</span>
+            </div>
+            <div class="genre">
+              <span class="genretext">Genre:</span>
+              <span class="genrename">Fantasy</span>
+            </div>
+            <div class="pages">
+              <span class="pagetext">Pages:</span>
+              <span class="pagenumber">246</span>
+            </div>
+          </section>
+          <section class="tab" id="first-tab">
+            <nav>
+              <a href="#first-tab" class="active">Reviews</a>
+              <a href="#second-tab">Details</a>
+            </nav>
+            <!-- my review -->
+            <div class="reviewcontainer">
+              <div class="reveiwhead">My Review</div>
+              <div class="reviewtoppart">
+                <div class="userinfo">
+                  <span class="username">Achraf</span>
+                  <span class="reviewdate">2022-06-17</span>
+                </div>
+                <div class="buttonmod">
+                  <span class="edit"><button class="edit">edit</button></span>
+                  <span class="delete"
+                    ><button class="delete">delete</button></span
+                  >
+                </div>
+              </div>
+              <div class="reviewtext">
+                <p>I don't Know , i died a long time ago</p>
+              </div>
+            </div>
+            <!-- end of my review -->
+            <div class="reviewcontainer">
+              <div class="reveiwhead">Popular Critics Reviews</div>
+              <div class="reviewtoppart">
+                <div class="userinfo">
+                  <span class="username">Michael Jackson</span>
+                  <span class="reviewdate">2022-06-17</span>
+                </div>
+              </div>
+              <div class="reviewtext">
+                <p>I don't Know , i died a long time ago</p>
+              </div>
+              <!-- start of review -->
+              <div class="reviewtoppart">
+                <div class="userinfo">
+                  <span class="username">Herbert Chermann</span>
+                  <span class="reviewdate">2023-12-05</span>
+                </div>
+              </div>
+              <div class="reviewtext">
+                <p>
+                  A lot can be said about this beautiful world-building by Frank
+                  Herbert. It had me thrilled from the start. This is truly an
+                  example of the sheer brilliance of a science fiction novel.
+                  The characters are super good in this book. The protagonist
+                  was a complex one that even his mother couldn't understand at
+                  times. The side characters were likeable too, each one of them
+                  having their own characteristics. The setting and complexities
+                  of the habitat in which Arrakis, the desert planet is set are
+                  commendable. Surely, it would have taken a lot of imagination
+                  to create something like this.
+                </p>
+              </div>
+              <!-- end of review -->
+              <!-- start of review -->
+              <div class="reviewtoppart">
+                <div class="userinfo">
+                  <span class="username">Austin Burke</span>
+                  <span class="reviewdate">2023-12-05</span>
+                </div>
+              </div>
+              <div class="reviewtext">
+                <p>
+                  We have finally arrived. This is my most anticipated movie in
+                  quite some time. Matt Reeves behind the camera, Robert
+                  Pattinson wearing the cowl, and small nuggets of Giacchino’s
+                  score are just a few of the ingredients that have been getting
+                  me excited for this one. The film opens (no spoilers, don’t
+                  worry) in a way that we have never seen a Batman movie open,
+                  and I knew we were in for something special. Not only is this
+                  a three hour murder mystery, with a hint of a classic noir
+                  film, and a touch of a detective Thriller, but this film
+                  genuinely embodies the Batman that I know from the comics. We
+                  will make our way to Bruce Wayne, but let’s talk about how
+                  good is Pattinson is when he is wearing the mask.
+                </p>
+              </div>
+              <!-- end of review -->
+            </div>
+          </section>
+        </div>
+        <div class="ratingcontainer">
+          <div class="ratingtitle">Average Rating</div>
+          <div class="rating">
+            <span class="google"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-2 -2 24 24"
+                width="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.376 8.068A5.944 5.944 0 0 0 4.056 10c0 .734.132 1.437.376 2.086a5.946 5.946 0 0 0 8.57 3.045h.001a5.96 5.96 0 0 0 2.564-3.043H10.22V8.132h9.605a10.019 10.019 0 0 1-.044 3.956 9.998 9.998 0 0 1-3.52 5.71A9.958 9.958 0 0 1 10 20 9.998 9.998 0 0 1 1.118 5.401 9.998 9.998 0 0 1 10 0c2.426 0 4.651.864 6.383 2.302l-3.24 2.652a5.948 5.948 0 0 0-8.767 3.114z"
+                ></path></svg
+            ></span>
+            <span class="ratinginfo">3.3/5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="book.js"></script>
+  <script
+    src="https://kit.fontawesome.com/aac7ff65c1.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

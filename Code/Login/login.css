@@ -1,214 +1,227 @@
-@font-face { font-family: Graphik; font-weight: bold; src: url('Src/font/GraphikBold.otf');}
-@font-face { font-family: Graphik; font-weight: normal; src: url('Src/font/GraphikRegular.otf');}
-@font-face { font-family: Graphik; font-weight:500; src: url('Src/font/GraphikMedium.otf');}
-*{
-	box-sizing: border-box;
-    font-family: Graphik,sans-serif;
-    font-weight: normal;
-	margin: 0;
-	padding: 0;
+@font-face {
+  font-family: Graphik;
+  font-weight: bold;
+  src: url("Src/font/GraphikBold.otf");
+}
+@font-face {
+  font-family: Graphik;
+  font-weight: normal;
+  src: url("Src/font/GraphikRegular.otf");
+}
+@font-face {
+  font-family: Graphik;
+  font-weight: 500;
+  src: url("Src/font/GraphikMedium.otf");
+}
+* {
+  box-sizing: border-box;
+  font-family: Graphik, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 body {
-    display: flex;
-margin-left: 10rem;
+  display: flex;
+  margin-left: 10rem;
 }
-.form{
-    margin: 13.5rem 0 0 2rem;
+.form {
+  margin: 13.5rem 0 0 2rem;
 }
-h4{
-  color: #46474E;
-    margin: 1rem 0 3rem 0;
-    font-size: 1rem;
-    font-family: Graphik; font-weight:500;
+h4 {
+  color: #46474e;
+  margin: 1rem 0 3rem 0;
+  font-size: 1rem;
+  font-family: Graphik;
+  font-weight: 500;
 }
-h1{
-    font-family: Graphik,sans-serif;
-    font-weight: Bold;
-   color: #333438;
+h1 {
+  font-family: Graphik, sans-serif;
+  font-weight: Bold;
+  color: #333438;
 }
-input{
-margin: 10px 0px 24px;
-border-radius: 7px;
-height: 42px;
-line-height: 42px;
-padding: 0px 7.5rem 0px 10px;
-outline: none;
-border-radius: 8px;
-border: #D1D1D3 0.2px solid;
-font-size: 14px;
-font-family: Graphik,sans-serif;
-font-weight: normal;
+input {
+  margin: 10px 0px 24px;
+  border-radius: 7px;
+  height: 42px;
+  line-height: 42px;
+  width: 18rem;
+  padding: 1rem;
+  outline: none;
+  border-radius: 8px;
+  border: #d1d1d3 0.2px solid;
+  font-size: 14px;
+  font-family: Graphik, sans-serif;
+  font-weight: normal;
 }
-input:hover{
-    border: black 0.2px solid;
+input:hover {
+  border: black 0.2px solid;
 }
 
-.emailtext{
-    font-size: 0.9rem;
-    color:#46474E;
+.emailtext {
+  font-size: 0.9rem;
+  color: #46474e;
 }
 .girl {
-    position: absolute;
-    left: 40%;
-    margin-right: 30rem;
-    width: 750px;
-    height: 100%;
+  position: absolute;
+  left: 40%;
+  margin-right: 30rem;
+  width: 750px;
+  height: 100%;
 }
-#button{
-    text-decoration: none;
-  background-color: rgb(113, 113, 236);
+#button {
+  text-decoration: none;
+  background-color: #3697a6;
   color: white;
   padding: 10px 20px 10px 20px;
-  margin-right:7.3rem ;
+  margin-right: 7.3rem;
   border-radius: 12px;
 }
 
-.logo a{
-    position: absolute;
-    text-decoration: none;
-    top: 4%;
-    left: 0.2%;
-    color: #28281F;
-	border: 0;
-    font-family: Graphik,sans-serif;
-    font-weight: Bold;
-	cursor:pointer;
-	font-size: 25pt;
-	margin-left: 4rem;
+.logo a {
+  position: absolute;
+  text-decoration: none;
+  top: 4%;
+  left: 0.2%;
+  color: #28281f;
+  border: 0;
+  font-family: Graphik, sans-serif;
+  font-weight: Bold;
+  cursor: pointer;
+  font-size: 25pt;
+  margin-left: 4rem;
 }
 
-#passtxt{
-    margin-right:6.1rem;
+#passtxt {
+  margin-right: 6.1rem;
 }
-#forgot{
-    font-size: 0.9rem;
-    color:#46474E;
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
+#forgot {
+  font-size: 0.9rem;
+  color: #46474e;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
-#forgot:hover{
-    transform:scale(1.5);
-    font-size: 0.9rem;
-    color:black;
+#forgot:hover {
+  transform: scale(1.5);
+  font-size: 0.9rem;
+  color: black;
 }
 
-#signup{
-    font-size: 0.9rem;
-    color:#46474E;
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
+#signup {
+  font-size: 0.9rem;
+  color: #46474e;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
-#signup:hover{
-    transform:scale(1.5);
-    font-size: 0.9rem;
-    color:black;
+#signup:hover {
+  transform: scale(1.5);
+  font-size: 0.9rem;
+  color: black;
 }
 .center.active .container {
-	position: fixed;
-	z-index:199;
-	display: block;
+  position: fixed;
+  z-index: 199;
+  display: block;
 }
-.center.active  {
-	display: block;
+.center.active {
+  display: block;
 }
-.center{
-	display: none;
-	position: absolute;
-	left: 35%;
-	top: 20%;
-    bottom: auto;
-    border-radius: 20px;
-	border: grey 0.2px solid;
+.center {
+  display: none;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  bottom: auto;
+  border-radius: 20px;
+  border: grey 0.2px solid;
 }
-.container{
-	display: block;
-	padding: 30px;
-	background-color: white;
-	height: 500px;
-	width: 350px;
-	border-radius: 20px;
+.container {
+  display: block;
+  padding: 30px;
+  background-color: white;
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
 }
-.container .text{
-	text-align: center;
-	font-family: Graphik,sans-serif;
-	font-weight: 500;
+.container .text {
+  text-align: center;
+  font-family: Graphik, sans-serif;
+  font-weight: 500;
 }
-.data{
-	margin-top: 2.5rem;
+.data {
+  margin-top: 2.5rem;
 }
-.container .formup .data input{
-	margin: 10px 0px 24px;
-	border-radius: 7px;
-	height: 42px;
-	line-height: 42px;
-	padding: 0px 7.5rem 0px 10px;
-	outline: none;
-	border-radius: 8px;
-	border: #D1D1D3 0.2px solid;
-	font-size: 14px;
-	font-family: Graphik,sans-serif;
-	font-weight: normal;
-	}
-
-.container .formup .data input:hover{
-		border: black 0.2px solid;
+.container .formup .data input {
+  margin: 10px 0px 24px;
+  border-radius: 7px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0px 7.5rem 0px 10px;
+  outline: none;
+  border-radius: 8px;
+  border: #d1d1d3 0.2px solid;
+  font-size: 14px;
+  font-family: Graphik, sans-serif;
+  font-weight: normal;
 }
 
-.container .formup .data  .ptext{
-    font-size: 0.9rem;
-    color:#46474E;
-    font-family: Graphik,sans-serif;
-    font-weight: normal;
-}
-#signup{
-font-size: 0.9rem;
-color:#46474E;
-transition: transform .2s ease-in-out;
-cursor: pointer;
-}
-#signup:hover{
-transform:scale(1.5);
-font-size: 0.9rem;
-color:black;
-}
-#buttoncreate{
-cursor: pointer;
-font-family: Graphik,sans-serif;
-font-weight: 500;
-margin-top: 0.1rem;
-margin-left: 5rem;
-border-color: transparent;
-width: 115px;
-height: 40px;
-border-radius: 20px;
-background-color: #3697a6;
-color: white !important;
-}
-#close{
-position: absolute;
-right: 20px;
-top: 31px;
-cursor: pointer;
+.container .formup .data input:hover {
+  border: black 0.2px solid;
 }
 
-.center.active .bbg{
+.container .formup .data .ptext {
+  font-size: 0.9rem;
+  color: #46474e;
+  font-family: Graphik, sans-serif;
+  font-weight: normal;
+}
+#signup {
+  font-size: 0.9rem;
+  color: #46474e;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+#signup:hover {
+  transform: scale(1.5);
+  font-size: 0.9rem;
+  color: black;
+}
+#buttoncreate {
+  cursor: pointer;
+  font-family: Graphik, sans-serif;
+  font-weight: 500;
+  margin-top: 0.1rem;
+  margin-left: 5rem;
+  border-color: transparent;
+  width: 115px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #3697a6;
+  color: white !important;
+}
+#close {
+  position: absolute;
+  right: 20px;
+  top: 31px;
+  cursor: pointer;
+}
 
-	position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 199;
+.center.active .bbg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 199;
 }
-#signupor{
-font-size: 0.9rem;
-color:#46474E;
-transition: transform .2s ease-in-out;
-cursor: pointer;
+#signupor {
+  font-size: 0.9rem;
+  color: #46474e;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
-#signupor:hover{
-transform:scale(1.5);
-font-size: 0.9rem;
-color:black;
+#signupor:hover {
+  transform: scale(1.5);
+  font-size: 0.9rem;
+  color: black;
 }
